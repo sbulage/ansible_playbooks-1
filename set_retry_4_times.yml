@@ -10,9 +10,7 @@
   - object: root
 
   gather_facts: False
-  roles:
-  - syncrou.manageiq-automate
-
+  
   tasks:
     - debug:
       msg: State retry number {{ workspace.workspace.input.objects.root.ae_state_retries }}
